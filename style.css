@@ -1,0 +1,20 @@
+p{
+    text-align: center;
+    
+}
+.one {
+    
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px;
+    
+  }
+  *{
+    
+    background-color: pink;
+    text-align: center;
+    margin: 0%
+    
+
+  }
