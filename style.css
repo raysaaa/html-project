@@ -4,12 +4,23 @@ p
     text-align: center;
     
 }
+ol {
+  margin-left: -40px;
+  margin-top: 5px;
+  list-style-position: inside;
+}
+ul {
+  margin-left: -50px;
+  margin-top: 5px;
+  list-style-position: inside;
+}
+
 .one {
     
     font-family: "Whisper", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 120px;
+    font-size: 100px;
     
   }
   *{
