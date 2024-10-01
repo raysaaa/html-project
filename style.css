@@ -1,10 +1,106 @@
 .one {
-  color: #BF2EF0;
+  color: fuchsia;
   font-family: "Whisper", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 100px;
+  background-color: pink;
+  margin: 0px;
+  margin-bottom: -20px;
 }
+.shop {
+  font-size: 40px;
+  color: fuchsia;
+  background-color: pink;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.two {
+  color:#921A40;
+  background-color: pink;
+  margin: 0px;
+}
+a {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+div {
+  height: 90px;
+  width: 90px;
+  background-color: pink;
+}
+.first
+ {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+  border: solid palevioletred;
+  border-width: 10px;
+  padding: 10px;
+  margin-left: 350px;
+}
+.second {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+  border: solid plum;
+  border-width: 10px;
+  padding: 10px;
+  margin-left: 500px;
+  margin-top: -128px;
+  
+}
+.third {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+  border: solid palevioletred;
+  border-width: 10px;
+  padding: 10px;
+  margin-left: 650px;
+  margin-top:-129px ;
+}
+.fourth {
+  color: white;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+  border: solid plum;
+  border-width: 10px;
+  padding: 10px;
+  margin-left: 800px;
+  margin-top: -129px;
+}
+
+.pink {
+  background-color: pink;
+  margin: 0px;
+}
+
+.best {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+  background-color: pink;
+}
+
+
 ol {
   margin-left: -40px;
   margin-top: 5px;
@@ -15,12 +111,56 @@ ul {
   margin-top: 5px;
   list-style-position: inside;
 }
+.ul {
+  background-color: pink;
+}
+.image {
+  margin-left: 0px;
+}
 
-  *{
+.dark {
+  background-color: palevioletred;
+}
+.bottom {
+  margin-right: -100px;
+}
+#img {
+  margin-left: 20px;
+  margin-right: 1000px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#last {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  color: white;
+  height: 250px;
+  width: 600px;
+  border: 20px solid palevioletred;
+  padding: 20px;
+  margin-top: -50px ;
+  margin-right: 20px;
+  margin-left: 580px;
   
-    background-color: pink;
+}
+
+*{
+    background-color: #FFEFEF;
     text-align: center;
     margin: 0px
-    
+  }
+  .cart {
+    text-align: left;
+  }
 
+  .lol {
+    height: 10px;
+    width: 10px;
+  }
+
+  .yes {
+    border: solid red;
   }
