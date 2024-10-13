@@ -8,6 +8,19 @@
   margin: 0px;
   margin-bottom: -20px;
 }
+.shoppingcart {
+  margin-left: 1200px;
+  text-align: right !important;
+  font-size: 30px;
+ 
+}
+.logo {
+  margin-top: 20px;
+  height: 85px;
+  width: 80px;
+  background-color: pink;
+}
+
 .shop {
   font-size: 40px;
   color: fuchsia;
@@ -24,6 +37,7 @@
   margin: 0px;
 }
 a {
+  color: #921A40;
   text-transform: uppercase;
   margin-top: 10px;
 }
@@ -85,6 +99,46 @@ div {
   margin-left: 800px;
   margin-top: -129px;
 }
+.side {
+  height: 300px;
+  width: 700px;
+  font-size: 20px;
+  margin: 30px;
+  margin-left: 200px;
+
+}
+.top {
+  margin-left: 730px;
+  margin-right: 20px;
+  margin-top: -240px;
+
+}
+.topp {
+  margin-left: 820px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+ 
+  
+}
+.h {
+  height: 170px; 
+  width: 130px;
+  border: 10px solid white;
+  display: inline-block;
+}
+.hh {
+  height: 170px; 
+  width: 130px;
+  border: 10px solid white;
+  display: inline-block;
+}
+.h:hover {
+  content: url(images/mm.jpg);
+}
+.hh:hover {
+  content: url(images/smile.jpg);
+
+}
 
 .pink {
   background-color: pink;
@@ -117,9 +171,8 @@ ul {
 .image {
   margin-left: 0px;
 }
-
 .dark {
-  background-color: palevioletred;
+  background-color: pink;
 }
 .bottom {
   margin-right: -100px;
@@ -146,21 +199,26 @@ ul {
   margin-left: 580px;
   
 }
+ 
+.checkout {
+  height: 500px;
+  width: 500px;
+  margin: 20px;
+}
 
 *{
-    background-color: #FFEFEF;
+    background-color: #fae7f3;
     text-align: center;
-    margin: 0px
+    margin: 0px;
   }
   .cart {
     text-align: left;
   }
-
-  .lol {
-    height: 10px;
-    width: 10px;
+  .bflower {
+    height: 300px;
+    width: 300px;
   }
-
-  .yes {
-    border: solid red;
-  }
+ .img {
+  height: 200px;
+  width: 200px;
+ }
