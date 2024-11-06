@@ -1,224 +1,141 @@
-.one {
-  color: fuchsia;
-  font-family: "Whisper", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 100px;
-  background-color: pink;
-  margin: 0px;
-  margin-bottom: -20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
 }
-.shoppingcart {
-  margin-left: 1200px;
-  text-align: right !important;
-  font-size: 30px;
- 
+body {
+    /*background-color: #fbeae9;*/
+    background-color: white;
+    color: #333;
 }
-.logo {
-  margin-top: 20px;
-  height: 85px;
-  width: 80px;
-  background-color: pink;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 15px 50px;
+    gap: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    flex-direction: inherit;
 }
-
-.shop {
-  font-size: 40px;
-  color: fuchsia;
-  background-color: pink;
-  text-align: center;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+.header h1{
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #d4af96;
 }
-.two {
-  color:#921A40;
-  background-color: pink;
-  margin: 0px;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
-a {
-  color: #921A40;
-  text-transform: uppercase;
-  margin-top: 10px;
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border: 1px solid #d4af96;
+    border-radius: 20px;
+    transition: background 0.3s;
 }
-div {
-  height: 90px;
-  width: 90px;
-  background-color: pink;
+nav ul li a:hover,
+   .active {
+    background-color: #d4af96;    
+    color: #fff;
+   }
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 20px;
+    width: 170px;
+    margin-left: 5px;
+  }
+  .search-container:hover {
+    border: 1px solid #d4af96;
+    border-radius: 20px;
 }
-.first
- {
-  color: white;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: xx-large;
-  border: solid palevioletred;
-  border-width: 10px;
-  padding: 10px;
-  margin-left: 350px;
-}
-.second {
-  color: white;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: xx-large;
-  border: solid plum;
-  border-width: 10px;
-  padding: 10px;
-  margin-left: 500px;
-  margin-top: -128px;
   
-}
-.third {
-  color: white;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: xx-large;
-  border: solid palevioletred;
-  border-width: 10px;
-  padding: 10px;
-  margin-left: 650px;
-  margin-top:-129px ;
-}
-.fourth {
-  color: white;
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: xx-large;
-  border: solid plum;
-  border-width: 10px;
-  padding: 10px;
-  margin-left: 800px;
-  margin-top: -129px;
-}
-.side {
-  height: 300px;
-  width: 700px;
-  font-size: 20px;
-  margin: 30px;
-  margin-left: 200px;
-
-}
-.top {
-  margin-left: 730px;
-  margin-right: 20px;
-  margin-top: -240px;
-
-}
-.topp {
-  margin-left: 820px;
-  margin-right: 20px;
-  margin-bottom: 0px;
- 
+  .search-container .material-symbols-outlined {
+    font-size: 20px; 
+    color: #d4af96; 
+  }
   
-}
-.h {
-  height: 170px; 
-  width: 130px;
-  border: 10px solid white;
-  display: inline-block;
-}
-.hh {
-  height: 170px; 
-  width: 130px;
-  border: 10px solid white;
-  display: inline-block;
-}
-.h:hover {
-  content: url(images/mm.jpg);
-}
-.hh:hover {
-  content: url(images/smile.jpg);
-
+  .search-container input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%; 
+    font-size: 16px;
+  }
+.logo-container {
+    margin-top: 70px;
+    width: 500px ;
+    height: 200px;
+   text-align: center;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.pink {
-  background-color: pink;
-  margin: 0px;
+.icons-container {
+    display: flex;
+    gap: 20px;
 }
 
-.best {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 60px;
-  background-color: pink;
+.icon-circle {
+    background-color: #fddac8;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
-
-
-ol {
-  margin-left: -40px;
-  margin-top: 5px;
-  list-style-position: inside;
+.icon-circle img {
+    width: 20px;
+    height: 20px;
 }
-ul {
-  margin-left: -50px;
-  margin-top: 5px;
-  list-style-position: inside;
+.welcome{
+    padding: 50px;
+    background-image: url('img/pic-9yNNnThkP-transformed.webp');
+    background-size: cover;
+    color: white;
+    font-weight: bold;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.ul {
-  background-color: pink;
-}
-.image {
-  margin-left: 0px;
-}
-.dark {
-  background-color: pink;
-}
-.bottom {
-  margin-right: -100px;
-}
-#img {
-  margin-left: 20px;
-  margin-right: 1000px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#last {
-  font-family: "Whisper", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 45px;
-  color: white;
-  height: 250px;
-  width: 600px;
-  border: 20px solid palevioletred;
-  padding: 20px;
-  margin-top: -50px ;
-  margin-right: 20px;
-  margin-left: 580px;
-  
-}
- 
-.checkout {
-  height: 500px;
-  width: 500px;
-  margin: 20px;
-}
-
-*{
-    background-color: #fae7f3;
+.welcome h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
     text-align: center;
-    margin: 0px;
-  }
-  .cart {
-    text-align: left;
-  }
-  .bflower {
-    height: 300px;
-    width: 300px;
-  }
- .img {
-  height: 200px;
-  width: 200px;
- }
+}
+.welcome p{
+    font-size: 1.1em;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+    text-align: center;
+
+}
+.button-group {
+    display: flex;   
+    justify-content: center;
+    gap: 15px;
+}
+.button{
+    background-color: #d4af96;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.button:hover{
+    background-color: #c28f7e;
+}
