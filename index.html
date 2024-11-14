@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier Threads</title>
+    <title>Handmade Crochet | Premier Threads</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Dancing+Script:wght@400..700&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -14,36 +13,150 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Dancing+Script:wght@400..700&family=Faculty+Glyphic&family=Great+Vibes&family=Satisfy&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Dancing+Script:wght@400..700&family=Faculty+Glyphic&family=Great+Vibes&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-</head>
+    <style>
+      .newsletter {
+    background-image: url('img/yarnn-transformed.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
 
+.newsletter-content {
+    max-width: 600px;
+    text-align: left;
+    color: black;
+    padding: 20px;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.newsletter-form button {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.newsletter-form button:hover {
+    background-color: #444444;
+}
+
+.split-section {
+    display: flex;
+    background-color: #F8EDEB;
+}
+
+.split-image {
+    flex: 1;
+    overflow: hidden;
+}
+
+.split-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.split-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+    background-color: #F8EDEB;
+}
+
+
+.split-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #b44b56;
+    margin-bottom: 30px;
+    font-family: "Great Vibes", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .split-section {
+        flex-direction: column; 
+    }
+    
+    .split-image,
+    .split-content {
+        width: 100%;
+        height: auto;
+    }
+}
+    </style>
+</head>
 <body>
-    <header class="header">
-        <h1>Premier Threads</h1>
-        <div class="search-container">
-            <span class="material-symbols-outlined">
-                &#xE8B6
-                </span>    
+  <header class="header">
+    <a href="index.html"><h1>Premier Threads</h1></a>
+    <div class="header-content">
+      <div class="search-container">
+        <span class="material-symbols-outlined">
+          &#xE8B6;
+        </span>    
         <input type="text" placeholder="Search...">
-       </div>
-       <nav>
-         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-         </ul>
-       </nav>
-       <!--
-       <div class="icons-container">
-         <div class="icon-circle">👤<a href=""></a></div>
-         <div class="icon-circle">🛒</div>
-       </div>-->
-    </header>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="icons-container">
+      <a href="login.html">
+        <i class="fas fa-user"></i> Log In
+      </a>
+      <a href="cart.html">
+        <i class="fas fa-shopping-cart"></i> Cart
+      </a>
+    </div>
+  </header>
    
         <img src="img/Brown Minimalist Handmade Knits Logo (1).png" class="logo-container" alt="Logo">
     
@@ -63,28 +176,106 @@
           <p>Inspired by the serene beauty of wildflower fields, this collection includes delicate crocheted flower bouquets, intricate leaf keychains, and other nature-themed accessories. Each piece brings a touch of the outdoors into your everyday life, perfect for adding a bit of rustic charm to your style or home.</p>
         <div class="collection">
           <div class="first-product">
+            <a href="coaster.html">
             <img src="img/leaf coaster.jpg" alt="Product 1">
             <p>Leaf Coaster</p>
             <span>₱100.00</span>
+          </a>
           </div>
           <div class="second-product">
+            <a href="lavender">
             <img src="img/lavender.jpg" alt="Product 2">
             <p>Lavender Flower Bouquet</p>
               <span>₱500.00</span>
+            </a>
           </div>
           <div class="third-product">
+            <a href="sprout.html">
             <img src="img/sprout.jpg" alt="Product 2">
             <p>Leaf Sprout</p>
             <span>₱50.00</span>
+          </a>
           </div>
         </div>
        </section>
 
-       <section class="try">
-        <img src="img/leaf coaster.jpg" class="big" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium praesentium voluptate consequatur labore? Quidem fuga deleniti, at, dolores unde consectetur iusto eveniet officia itaque repellendus incidunt facilis doloribus aperiam reprehenderit.</p>
-       </section>
-      
+       <section class="best-sellers">
+        <h2 class>Our Best Sellers</h2>
+      <div class="best-sellers-container">
+        <div class="bag" style=":hover{content: url('img/coquettebag3.jpg');}">
+          <a href="coaster.html">
+          <img src="img/coquettebag 2.jpg" alt="Product 1">
+          <p>Bag</p>
+          <span>₱100.00</span><br>
+          <span>★★★★★</span>
+        </a>
+        </div>
+        <div class="cardigan">
+          <a href="coaster.html">
+          <img src="img/cardigan 2.jpg" alt="Product 1">
+          <p>Cardigan</p>
+          <span>₱100.00</span><br>
+          <span>★★★★★</span>
+        </a>
+        </div>
+        <div class="case">
+          <img src="img/airpod cases 3.jpg" alt="Product 2">
+          <p>Airpod Case</p>
+            <span>₱500.00</span><br>
+            <span>★★★★☆</span>
+          
+        </div>
+        <div class="keychain">
+          <img src="img/strawberry keychain.jpg" alt="Product 2">
+          <p>Strawberry Keychain</p>
+          <span>₱50.00</span><br>
+          <span>★★★★☆</span>
+        
+        </div>
+      </div>
+     </section>
+     <section class="split-section">
+      <div class="split-content">
+          <p>Explore our collection today and discover the timeless elegance of handcrafted crochet.</p>
+      </div>
+  </section>
+     <section class="newsletter">
+      <div class="newsletter-content">
+          <h2>Newsletter</h2>
+          <p>Stay in touch for coupons and new patterns</p>
+          <form class="newsletter-form">
+              <input type="email" placeholder="Email Address" required>
+              <button type="submit">Subscribe</button>
+          </form>
+      </div>
+  </section>
+       <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About Premier Threads</h3>
+                <p>Premier Threads offers unique, handcrafted crochet items made with love and care. From cozy apparel to charming accessories, each piece is thoughtfully designed to bring warmth and joy.</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <p>Stay connected and follow us on social media:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/raizaaaaaaaaaa"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@raysaa790"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/rayysaaaa_"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: raizaperesores@gmail.com</p>
+                <p>Phone: +639278026832</p>
+                <p>Address: Cebu City, Cebu, Philippines</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Premier Threads. All rights reserved.</p>
+        </div>
+    </footer>    
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premier Threads</title>
+    <title>Shop | Premier Threads</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Dancing+Script:wght@400..700&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -15,31 +15,360 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Dancing+Script:wght@400..700&family=Faculty+Glyphic&family=Great+Vibes&family=Satisfy&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <style>
+   body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: white;
+      }
+
+      .shop-container {
+        display: flex;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        margin-top: 60px;
+        justify-content: center;
+        
+      }
+
+      /* Sidebar Styling */
+      .sidebar {
+        width: 200px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        margin-right: 20px;
+        margin-left: 0px;
+      }
+
+      .sidebar h2 {
+        font-size: 22px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .filter-group h3 {
+        font-size: 18px;
+        margin: 15px 0 10px;
+        color: #555;
+      }
+
+      .filter-group ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .filter-group ul li {
+        margin: 8px 0;
+        
+      }
+
+      .filter-group ul li a {
+        text-decoration: none;
+        color: #666;
+      }
+
+      .filter-group ul li a:hover {
+        color: #ff7f7f;
+      }
+
+      /* Products Section Styling */
+      .products {
+        flex: 1;
+      }
+
+      .products h1 {
+      font-size: 50px;
+       color: #b44b56;
+       margin-bottom: 30px;
+       font-family: "Great Vibes", cursive;
+       font-weight: 400;
+       font-style: normal;
+       text-align: center;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      /* Product Card Styling */
+      .product-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        padding: 15px;
+        transition: transform 0.3s;
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .product-image {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+        display: block;
+        object-fit: cover;
+      }
+
+      .product-card h3 {
+        font-size: 18px;
+        color: #333;
+        margin: 10px 0 5px;
+      }
+
+      .product-subtitle {
+        font-size: 14px;
+        color: #888;
+        margin-bottom: 10px;
+        font-style: italic;
+      }
+
+      .product-description {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-size: 16px;
+        color: #ff7f7f;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .select-btn {
+        background-color: #e3b5b5;
+        color: #333;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .select-btn:hover {
+        background-color: #d18f8f;
+      }
+      .dropbtn {
+  background-color: #e3b5b5;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+   </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Premier Threads</h1>
-        <div class="search-container">
-            <span class="material-symbols-outlined">
-                &#xE8B6
-                </span>    
+  <header class="header">
+    <a href="index.html"><h1>Premier Threads</h1></a>
+    <div class="header-content">
+      <div class="search-container">
+        <span class="material-symbols-outlined">
+          &#xE8B6;
+        </span>    
         <input type="text" placeholder="Search...">
-       </div>
-       <nav>
-         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="shop.html" class="active">Shop</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-         </ul>
-       </nav>
-       <!--
-       <div class="icons-container">
-         <div class="icon-circle">👤<a href=""></a></div>
-         <div class="icon-circle">🛒</div>
-       </div>-->
-    </header>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="icons-container">
+      <a href="login.html">
+        <i class="fas fa-user"></i> Log In
+      </a>
+      <a href="cart.html">
+        <i class="fas fa-shopping-cart"></i> Cart
+      </a>
+    </div>
+  </header>
+
+    <div class="shop-container">
+      <aside class="sidebar">
+          <h2>Filter by</h2>
+          <div class="filter-group">
+              <h3>Category</h3>
+              <ul>
+                  <li><a href="#">Crocheted Bouquets</a></li>
+                  <li><a href="#">Crochet Keychains</a></li>
+                  <li><a href="#">Crocheted Bags</a></li>
+                  <li><a href="#">Crocheted Accessories </a></li>
+              </ul>
+          </div>
+          <div class="filter-group">
+              <h3>Price</h3>
+              <ul>
+                  <li><a href="#">Under ₱500</a></li>
+                  <li><a href="#">₱500 - ₱1000</a></li>
+                  <li><a href="#">₱1000 - ₱2000</a></li>
+              </ul>
+          </div>
+          <div class="filter-group">
+              <h3>Color</h3>
+              <ul>
+                  <li><a href="#">Red</a></li>
+                  <li><a href="#">Violet</a></li>
+                  <li><a href="#">Green</a></li>
+                  <li><a href="#">Pink</a></li>
+                  <li><a href="#">White</a></li>
+              </ul>
+          </div>
+          
+      </aside>
+  
+      <section class="products">
+          <h1>Our Products</h1>
+          <div class="product-grid">
+              
+              <div class="product-card">
+                  <img src="img/lavender.jpg" alt="Product 1" class="product-image">
+                  <h3>Crochet Lavender Bouquet</h3>
+                  <p class="product-subtitle">Bouquet</p>
+                  <p class="product-description">A beautiful hand-crocheted lavender bouquet made from high-quality yarn.</p>
+                  <p class="price">₱870.00</p>
+                  <button onclick="document.location='cart.html'" class="select-btn">Add to Cart</button> 
+              </div>
+              <div class="product-card">
+                  <img src="img/airpod cases.jpg" alt="Product 2" class="product-image">
+                  <h3>Crochet Airpod Cases</h3>
+                  <p class="product-subtitle">Airpod Case</p>
+                  <p class="product-description">A unique crochet case with a flower charm, crafted to keep your AirPods stylishly safe.</p>
+                  <p class="price">₱149.00</p>
+                  <button onclick="document.location='cart.html'" class="select-btn">Add to Cart</button> 
+              </div>
+              <div class="product-card">
+                  <img src="img/bandana.jpg" alt="Product 3" class="product-image">
+                  <h3>Crocheted Bandana</h3>
+                  <p class="product-subtitle">Bandana</p>
+                  <p class="product-description">Lightweight and comfortable, this crocheted bandana adds a touch of handmade elegance to any outfit.</p>
+                  <p class="price">₱150.00</p>
+                  <button onclick="document.location='cart.html'" class="select-btn">Add to Cart</button> 
+              </div>
+              <div class="product-card">
+                  <img src="img/cardigan 1.jpg" alt="Product 4" class="product-image">
+                  <h3>Crochet Cardigan</h3>
+                  <p class="product-subtitle">Cardigan</p>
+                  <p class="product-description">Cozy and versatile, this soft cardigan is crafted from hypoallergenic yarn for ultimate comfort.</p>
+                  <p class="price">₱600.00</p>
+                  <button onclick="document.location='cart.html'" class="select-btn">Add to Cart</button> 
+              </div>
+              <div class="product-card">
+                <img src="img/leaf coaster.jpg" alt="Product 1" class="product-image">
+                <h3>Crochet Leaf Coaster</h3>
+                <p class="product-subtitle">Coaster</p>
+                <p class="product-description">Add a touch of nature to your home with this handmade leaf coaster, perfect for mugs or decor.</p>
+                <p class="price">₱100.00</p>
+                <button onclick="document.location='cart.html'" class="select-btn">Add to Cart</button> 
+            </div>
+            <div class="product-card">
+                <img src="img/strawberry keychain.jpg" alt="Product 2" class="product-image">
+                <h3>Crochet Keychain</h3>
+                <p class="product-subtitle">Keychain</p>
+                <p class="product-description">Small and adorable strawberry keychains, ideal for adding a cute touch to your keys or bag.</p>
+                <p class="price">₱100.00</p>
+                <button onclick="document.location='cart.html'" class="select-btn">Add to Cart</button> 
+            </div>
+            <div class="product-card">
+                <img src="img/coquettebag.jpg" alt="Product 3" class="product-image">
+                <h3>Crocheted Bag</h3>
+                <p class="product-subtitle">Bag</p>
+                <p class="product-description">A handmade crochet bag with delicate detailing, designed to complement any casual or chic style.</p>
+                <p class="price">₱450.00</p>
+                <button onclick="document.location='cart.html'" class="select-btn">Add to Cart</button> 
+            </div>
+            <div class="product-card">
+                <img src="img/sprout.jpg" alt="Product 4" class="product-image">
+                <h3>Crochet Leaf Sprout</h3>
+                <p class="product-subtitle">Leaf Sprout</p>
+                <p class="product-description">An adorable crochet leaf sprout, perfect for adding a nature-inspired accent to your space.</p>
+                <p class="price">₱50.00</p>
+                <button onclick="document.location='cart.html'" class="select-btn">Add to Cart</button> 
+            </div>
+          </div>
+      </section>
+  </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>About Premier Threads</h3>
+            <p>Premier Threads offers unique, handcrafted crochet items made with love and care. From cozy apparel to charming accessories, each piece is thoughtfully designed to bring warmth and joy.</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <p>Stay connected and follow us on social media:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/raizaaaaaaaaaa"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@raysaa790"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/rayysaaaa_"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: raizaperesores@gmail.com</p>
+            <p>Phone: +639278026832</p>
+            <p>Address: Cebu City, Cebu, Philippines</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Premier Threads. All rights reserved.</p>
+    </div>
+</footer>
+  </body>
+  </html>
 </body>
 </html>

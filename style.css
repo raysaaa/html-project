@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Faculty Glyphic", sans-serif;
-    font-weight: ;
     font-style: normal;
     
 }
 body {
-    /*background-color: #fbeae9;*/
     background-color: white;
     color: #333;
 }
@@ -22,7 +20,11 @@ body {
     gap: 10px;
     background-color: #ffffff;
     width: 100%;
-    flex-direction: inherit;
+    z-index: 100;
+    justify-content: space-between;
+}
+.header a {
+    text-decoration: none;
 }
 .header h1{
     font-family: "Great Vibes", cursive;
@@ -55,7 +57,7 @@ nav ul li a:hover,
     padding: 8px;
     border-radius: 20px;
     width: 170px;
-    margin-left: 5px;
+    margin-left: 100px;
   }
   .search-container:hover {
     border: 1px solid #d4af96;
@@ -87,20 +89,71 @@ nav ul li a:hover,
     display: flex;
     gap: 20px;
     justify-content: right;
+    color: #d4af96 ;
+}
+.icons-container {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #b44b56;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.icons-container a{
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 18px;
+    color: #d4af96;
+    margin-right: 5px;
 }
 
-.icon-circle {
-    background-color: #fddac8;
-    padding: 10px;
-    border-radius: 50%;
-    display: inline-flex;
+.icons-container a:hover {
+    color: #c28f7e;  
+}
+.icons-container a i {
+    gap: 20px;
+}
+.header {
+    display: flex;
     align-items: center;
-    justify-content: center;
-}
-.icon-circle img {
-    width: 20px;
-    height: 20px;
-}
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff; 
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+  }
+  
+  .search-container input[type="text"] {
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid #d3ad8e;
+    border-radius: 20px;
+    color: #d3ad8e;
+    transition: background 0.3s;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+  }
 .welcome{
     padding: 50px;
     background-image: url('img/pic-9yNNnThkP-transformed.webp');
@@ -148,6 +201,9 @@ nav ul li a:hover,
     padding: 50px 20px;
     background-color:#fcd6ce;
     background: linear-gradient(to bottom right, #f3c4c4, #f9f1f1);
+}
+a {
+    text-decoration: none;
 }
 .collection-section h2{
     font-size: 50px;
@@ -255,3 +311,215 @@ nav ul li a:hover,
   .try p{
     float: right;
   }
+  .best-sellers{
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f1f1;
+  }
+  .best-sellers h2 {
+    font-size: 70px;
+    color: #b44b56;
+    margin-bottom: 30px;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .best-sellers-container {
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+  }
+  .best-sellers-container p{
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.best-sellers-container span{
+    color: #b44b56;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bag{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.bag img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.bag img:hover{
+    content: url(img/coquettebag3.jpg);
+}
+.cardigan{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cardigan img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.cardigan img:hover{
+    content: url(img/cardigan.jpg);
+}
+.case{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.case img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.case img:hover{
+    content: url(img/airpod\ casses\ 2.jpg);
+}
+.product span{
+    color: #b44b56;
+}
+.keychain{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.keychain img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+.keychain img:hover{
+    content: url(img/keychain2.jpg);
+}
+@keyframes fadeIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+ .collection img {
+    animation: fadeIn 4s ease;
+  }
+
+  .footer {
+    background-color: #F8EDEB;
+    color: #5D3A3A;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #B44B56;
+}
+
+.footer p,
+.footer ul li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-about,
+.footer-links,
+.footer-social,
+.footer-contact {
+    flex: 1 1 250px;
+    margin: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+.footer-links ul li a {
+    color: #5D3A3A;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #B44B56;
+    text-decoration: underline;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social .social-icons a {
+    font-size: 20px;
+    color: #B44B56;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+    color: #5D3A3A;
+}
+
+.footer-contact p {
+    margin: 8px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    background-color: #EAD6D4;
+    color: #5D3A3A;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    margin-bottom: 0px;
+}
